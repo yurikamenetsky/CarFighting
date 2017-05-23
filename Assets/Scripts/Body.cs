@@ -5,6 +5,13 @@ using UnityEngine;
 
 namespace GnomeCarArena
 {
+    public enum ItemLevel
+    {
+        Wood,
+        Metal,
+        Crystal
+    }
+    
     public enum BodyType
     {
         Classic,
@@ -13,7 +20,13 @@ namespace GnomeCarArena
         Compact
     }
 
-    public class BodyInfo
+    public class ItemInfo
+    {
+        public ItemLevel level;
+        public int quality;
+    }
+
+    public class BodyInfo : ItemInfo
     {
         public BodyType type;
         public List<BodySlotInfo> slots;

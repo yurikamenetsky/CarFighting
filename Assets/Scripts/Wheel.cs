@@ -4,8 +4,21 @@ using UnityEngine;
 
 namespace GnomeCarArena
 {
-    public class WheelInfo
+    public enum WheelType
     {
+        VeryBig,
+        Big,
+        Middle,
+        Small
+    }
+    
+    public class WheelInfo : ItemInfo
+    {
+        public WheelType wheelType;
+        public float health;
+        public float mass;
+        public float spring;
+        public float supressionDistance;
         public float torque;
     }
     

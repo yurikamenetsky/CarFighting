@@ -11,17 +11,9 @@ namespace GnomeCarArena
         Utility
     }
 
-    public enum BodySlotLevel
-    {
-        Wood,
-        Metal,
-        Crystal
-    }
-
     public class BodySlotInfo
     {
         public BodySlotType slotType;
-        public BodySlotLevel slotLevel;
         public Vector3 position;
     }
     
