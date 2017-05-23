@@ -26,7 +26,7 @@ namespace GnomeCarArena
 
         void Awake()
         {
-            Time.timeScale = 0.3f;
+            Time.timeScale = 1f;
         }
     }
 }
